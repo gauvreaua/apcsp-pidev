@@ -28,4 +28,11 @@ int main()
   *ptrtoe = 8;
   printf("The value of d is %f and the address of d is %d\n", d, &d);
   printf("The value of e is %f and the address of e is %d\n", e, &e);
+
+  float temp;
+  temp = *ptrtoe;
+  *ptrtoe = *ptrtod;
+  *ptrtod = temp;
+  printf("The value of d is %f and the address of d is %d\n", d, &d);
+  printf("The value of e is %f and the address of e is %d\n", e, &e);
 }
